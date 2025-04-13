@@ -79,12 +79,12 @@ function displayWeatherData(data) {
     avg_temp.innerText = `${data.forecast.forecastday[0].day.avgtemp_c} °C`
 
     const app_container = document.querySelector('.app-container')
-    if(screen.width < 320) {
-        app_container.style.display = 'none';
-        alert('Seu dispositivo não é compatível com este site!')
-    } else {
+    // if(screen.width < 320) {
+    //     app_container.style.display = 'none';
+    //     alert('Seu dispositivo não é compatível com este site!')
+    // } else {
         app_container.style.display = 'flex';z
-    }
+    // }
 }
 
 function formatTime(time) {
