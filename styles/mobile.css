@@ -64,9 +64,3 @@
         width: auto;
     }
 }
-
-@media screen and (max-width: 462px) {
-    .app-container {
-        display: none;
-    }
-}
