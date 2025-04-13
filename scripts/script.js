@@ -89,7 +89,7 @@ function displayWeatherData(data) {
     avg_temp.innerText = `${data.forecast.forecastday[0].day.avgtemp_c} °C`;
 
     const app_container = document.querySelector('.app-container');
-    app_container.style.display = 'flex'; // mostra a interface após carregamento
+    app_container.style.display = 'flex';
 }
 
 function formatTime(time) {
