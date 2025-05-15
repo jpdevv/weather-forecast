@@ -41,10 +41,10 @@ window.addEventListener('DOMContentLoaded', () => {
             fetchWeatherData(data.ip);
         })
         .catch(error => {
-            console.error('Erro ao obter IP:', error);
-            alert('Não foi possível obter sua localização automaticamente.');
             let header = document.getElementById('header');
             header.style.display = 'flex';
+            console.error('Erro ao obter IP:', error);
+            alert('Não foi possível obter sua localização automaticamente.');
         });
 });
 
