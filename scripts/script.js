@@ -43,6 +43,8 @@ window.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Erro ao obter IP:', error);
             alert('Não foi possível obter sua localização automaticamente.');
+            let header = document.getElementById('header');
+            header.style.display = 'block';
         });
 });
 
